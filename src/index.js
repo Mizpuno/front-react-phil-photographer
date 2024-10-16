@@ -1,16 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
 import './styles/tailwind.css';
 import './styles/globals.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter, RouterProvider, Route, Link} from "react-router-dom";
+import Commons from './pages/Commons'
+import App from './App'
+
+const router = createBrowserRouter([
+    { path:'/', element: <App/> },
+    { path:'Commons', element: <Commons/> },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
