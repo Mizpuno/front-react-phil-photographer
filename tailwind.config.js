@@ -13,6 +13,14 @@ module.exports = {
       extend: {},
   },
     darkMode: "class",
-    plugins: [nextui()]
+    plugins: [nextui({
+        themes: {
+            "dark-phil": {
+                extend: 'dark',
+                colors: {},
+                layout: {},
+            }
+        }
+    })]
 }
 
