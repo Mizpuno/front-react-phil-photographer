@@ -3,8 +3,8 @@ import './styles/globals.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider, Route, Link} from "react-router-dom";
-import Commons from './pages/Commons'
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Commons from './pages/commons/Commons'
 import App from './App'
 
 const router = createBrowserRouter([
